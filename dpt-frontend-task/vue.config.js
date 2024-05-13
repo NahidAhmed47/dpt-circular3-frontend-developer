@@ -1,9 +1,12 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
+const path = require("path");
+
+module.exports = {
  transpileDependencies: true,
- resolve: {
-  alias: {
-   "@": path.resolve(__dirname, "src/"),
+ configureWebpack: {
+  resolve: {
+   alias: {
+    "@": path.resolve(__dirname, "src/"),
+   },
   },
  },
-});
+};
