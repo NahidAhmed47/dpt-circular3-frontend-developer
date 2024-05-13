@@ -1,15 +1,15 @@
 <template>
- <HelloWorld msg="Welcome to Your Vue.js App" />
+ <HeaderNav />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HeaderNav from "./components/shared/HeaderNav.vue";
 import "./assets/style.css";
 
 export default {
  name: "App",
  components: {
-  HelloWorld,
+  HeaderNav,
  },
 };
 </script>
