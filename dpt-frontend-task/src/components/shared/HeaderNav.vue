@@ -44,7 +44,6 @@
 
 <script>
 import { navLinks } from "../../constant/navLinks";
-console.log(navLinks);
 
 export default {
  name: "HeaderNav",
@@ -55,6 +54,3 @@ export default {
  },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
