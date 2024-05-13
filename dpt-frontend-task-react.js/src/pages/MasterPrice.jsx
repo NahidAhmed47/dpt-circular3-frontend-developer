@@ -57,20 +57,20 @@ const MasterPrice = () => {
 
   return (
     <div>
-      <h1 className='text-3xl font-bold'>Master Price</h1>
+      <h1 className='text-3xl font-bold py-1.5'>Master Price</h1>
       <hr className='absolute w-full left-0' />
 
       {/* Flight search form section  */}
       <form onSubmit={handleSubmitForm}>
         <section className='mt-2'>
           <div className='py-6 flex justify-center items-center'>
-            <button className='font-bold px-6 text-sm py-1 border border-violet-800 hover:bg-violet-800 hover:text-white'>
+            <button className='font-bold px-6 text-sm py-1 border border-violet-800 hover:bg-violet-800 hover:text-white transition-all duration-300'>
               Round Trip
             </button>
-            <button className='font-bold px-6 text-sm py-1 border border-violet-800 text-white bg-violet-800 hover:bg-white hover:text-black'>
+            <button className='font-bold px-6 text-sm py-1 border border-violet-800 text-white bg-violet-800 hover:bg-white hover:text-black transition-all duration-300'>
               One Way
             </button>
-            <button className='font-bold px-6 text-sm py-1 border border-violet-800 hover:bg-violet-800 hover:text-white'>
+            <button className='font-bold px-6 text-sm py-1 border border-violet-800 hover:bg-violet-800 hover:text-white transition-all duration-300'>
               Multi City
             </button>
           </div>
@@ -140,8 +140,11 @@ const MasterPrice = () => {
               type='checkbox'
               checked={isChecked}
               onChange={handleCheckboxChange}
+              id='extraOption'
             />
-            <label className='ml-2 font-bold'>Extra Options</label>
+            <label className='ml-2 font-bold' htmlFor='extraOption'>
+              Extra Options
+            </label>
           </div>
           <div className='flex space-x-2'>
             <p className='font-bold'>Environment:</p>
@@ -168,7 +171,7 @@ const MasterPrice = () => {
               </label>
             </div>
           </div>
-          <button className='bg-violet-800 text-white uppercase rounded-md font-bold px-8 py-3 border border-violet-800 hover:bg-white hover:text-black '>
+          <button className='bg-violet-800 text-white uppercase rounded-md font-bold px-8 py-3 border border-violet-800 hover:bg-white hover:text-black transition-all duration-300'>
             Search
           </button>
         </section>
