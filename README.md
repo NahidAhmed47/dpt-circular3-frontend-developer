@@ -1,30 +1,97 @@
-# Assessment test for Frontend Developer
+# I completed the task with React.js and Vue.js
 
-1. Fork this repository.
-2. Clone this repository to your local machine.
-3. Check data and image folder.
-4. Follow the image first. There is a search form and formated data.
-5. You need to create a flight search form with HTML, CSS and Tailwind CSS.
-6. On form submit get the json data privided inside data folder.
-7. Parse and show your data according to the image provided.
+## Run the project locally for React.js
 
-==============================================================
+Please follow the steps:
 
--   Follow https://flightexpert.com or https://gozayaan.com to understand what are we doing.
--   Do not copy Flight Expert or Go Zayaan, just get idea and follow the image we have given.
--   LHR = Heathrow Airport, CDG = Paris Charles de Gaulle Airport.
--   You do not need to make the form dynamic or filter anything, Just parse the data.
+```bash
+#1
+https://github.com/NahidAhmed47/dpt-circular3-frontend-developer.git
 
-==============================================================
+#2
+cd dpt-circular3-frontend-developer
+cd dpt-frontend-task-react.js
 
--   Complete this task using fresh laravel/Vue JS/React JS or any other language.
--   Update your readme file how can we run the proejct.
--   Mention how much time have you spent for this to complete.
--   Mention the best practices you've implemented in your code.
--   Provide URLs for two of your live frontend projects.
--   Share links to your top two personal Git repositories.
+#3
+npm install
+
+#4
+npm run dev
+
+```
 
 ==============================================================
 
--   Upload your code on github and send us link.
--   Video guideline:- https://www.loom.com/share/87a2a73e58484f18b08b47ad5af55e99
+## Run the project locally for Vue.js
+
+Please follow the steps:
+
+```bash
+#1
+https://github.com/NahidAhmed47/dpt-circular3-frontend-developer.git
+
+#2
+cd dpt-circular3-frontend-developer
+cd dpt-frontend-task-vue.js
+
+#3
+npm install
+
+#4
+npm run serve
+
+```
+
+==============================================================
+
+# How much time I have spent for this to complete?
+
+I have spent almost 6-7 hours to complete this task using React.js and almost 4-5 hours spent to 70% complete this task using Vue.js. As your recommended technology I try to use Vue.js also but mainly I am React.js developer and I have ability to learn new technologies as per demand.
+
+==============================================================
+
+# Best practices implemented in my code:
+
+1. Reusable component.
+2. Clean code and ensure code readability.
+
+==============================================================
+
+# My two live frontend project's URLs:
+
+## Travel In (A travel related website using react.js)
+
+Live link: https://travelin-web.netlify.app/
+
+## DM Institute BD (A learning management system website, frontend developed by me)
+
+Live link: https://www.dminstitutebd.com/
+
+==============================================================
+
+# My top two git repositories URLs:
+
+## React-popupkit (My open-source npm package)
+
+Repo link: https://github.com/NahidAhmed47/react-popupkit
+NPM - https://www.npmjs.com/package/react-popupkit
+
+## Travel in
+
+Repo link: https://github.com/NahidAhmed47/travelin
+
+==============================================================
+
+# Task live site:
+
+Link: https://master-price-flight-search.netlify.app/
+
+==============================================================
+
+# About me
+
+I am Frontend developer with 9 months of experience running. Most of the time I used technologies for develop frontend like Javascript, Typescript, React.js and Next.js also have a begging experience with Vue.js and SvelteKit. But I love to learn new technologies and take updated with the latest frontend industries trend.
+
+Phone: +8801312397286
+Email: nahidahmedsd47@gmail.com
+LinkedIn: https://www.linkedin.com/in/nahid-ahmed-281901212/
