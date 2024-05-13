@@ -13,7 +13,8 @@ const Dropdown = ({ options, onSelect }) => {
   <select
    value={selectedOption}
    onChange={handleSelectChange}
-   className='border rounded p-2 w-full'>
+   className='border rounded p-2 w-full'
+   name=''>
    <option value='' disabled>
     Select an option
    </option>
