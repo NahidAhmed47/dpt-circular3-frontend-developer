@@ -11,10 +11,12 @@ import {
  options6,
  options7,
 } from "../constants/filterOptions";
+import FlightDataRow from "../components/flightDataRow/FlightDataRow";
+import { flightAllData } from "../constants/flightData";
 
 const MasterPrice = () => {
  const [isLoading, setIsLoading] = useState(true);
- const [flightData, setFlightData] = useState([]);
+ const [flightsData, setFlightData] = useState(flightAllData?.flightOffer);
  const [selectedDate, setSelectedDate] = useState(new Date());
  const [isChecked, setIsChecked] = useState(false);
  const [selectedOption, setSelectedOption] = useState("dummy");
@@ -27,24 +29,7 @@ const MasterPrice = () => {
   setSelectedOption(event.target.value);
  };
 
- useEffect(() => {
-  const fetchData = async () => {
-   try {
-    await fetch("./myData.json") // Path to your local JSON file
-     .then((res) => res.json())
-     .then((data) => {
-      // console.log(data?.flightOffer);
-      setFlightData(data);
-      setIsLoading(false);
-     });
-   } catch (error) {
-    setIsLoading(false);
-    console.error("Error fetching data:", error);
-   }
-  };
-
-  fetchData();
- }, []);
+ console.log(flightsData);
 
  return (
   <div>
@@ -181,7 +166,7 @@ const MasterPrice = () => {
     </div>
    ) : (
     <section className='py-2 mb-9'>
-     <p>{flightData?.message}</p>
+     <p>{flightsData?.message}</p>
      <table className='table-auto mt-4 w-full text-center'>
       <thead className='bg-gray-300'>
        <tr className='text-center'>
@@ -197,12 +182,12 @@ const MasterPrice = () => {
        </tr>
       </thead>
       <tbody>
-       {/* {flightData?.flightOffer?.map((item, index) => (
-        <SingleFlightData
+       {flightsData?.flightOffer?.map((item, index) => (
+        <FlightDataRow
          key={index}
          index={index}
-         totalItem={item}></SingleFlightData>
-       ))} */}
+         totalItem={item}></FlightDataRow>
+       ))}
       </tbody>
      </table>
     </section>
