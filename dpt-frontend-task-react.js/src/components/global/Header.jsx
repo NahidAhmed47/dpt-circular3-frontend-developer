@@ -1,4 +1,5 @@
-import { navLinks } from "../../assets/constant";
+import { NavLink } from "react-router-dom";
+import { navLinks } from "../../constants/navLinks";
 
 const Header = () => {
  return (
@@ -9,13 +10,13 @@ const Header = () => {
      <ul className='flex space-x-4'>
       {navLinks.map((link) => (
        <li key={link.title}>
-        <link
+        <NavLink
          className={({ isActive }) => `py-1 duration-200 hover:text-blue-400
                   ${isActive ? "text-blue-600" : "text-white"}
                   `}
          to={link.to}>
          {link.title}
-        </link>
+        </NavLink>
        </li>
       ))}
      </ul>
