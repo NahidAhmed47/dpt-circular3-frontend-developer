@@ -1,15 +1,15 @@
 <template>
- <HeaderNav />
+ <HomeView />
 </template>
 
 <script>
-import HeaderNav from "./components/shared/HeaderNav.vue";
+import HomeView from "./views/HomeView.vue";
 import "./assets/style.css";
 
 export default {
  name: "App",
  components: {
-  HeaderNav,
+  HomeView,
  },
 };
 </script>
